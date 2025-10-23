@@ -1,4 +1,6 @@
-package home_work_2;
+package home_work_2.arrays;
+
+import home_work_2.utils.ArraysUtils;
 
 import java.util.Arrays;
 

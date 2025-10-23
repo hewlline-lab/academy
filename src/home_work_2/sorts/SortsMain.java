@@ -1,4 +1,7 @@
-package home_work_2;
+package home_work_2.sorts;
+
+import home_work_2.utils.ArraysUtils;
+import home_work_2.utils.SortsUtils;
 
 public class SortsMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package home_work_2;
+package home_work_2.arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
