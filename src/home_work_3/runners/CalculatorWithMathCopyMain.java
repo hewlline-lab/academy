@@ -2,7 +2,7 @@ package home_work_3.runners;
 
 import home_work_3.calcs.simple.CalculatorWithOperator;
 
-public class CalculatorWithOperatorMain {
+public class CalculatorWithMathCopyMain {
     public static void main(String[] args) {
 
         CalculatorWithOperator operators = new CalculatorWithOperator();

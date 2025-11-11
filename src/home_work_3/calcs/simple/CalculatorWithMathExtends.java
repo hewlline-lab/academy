@@ -1,46 +1,20 @@
 package home_work_3.calcs.simple;
 
-public class CalculatorWithMathCopyMain {
+import home_work_3.calcs.api.ICalculator;
 
-    public double sum(double a, double b) {
-        return a + b;
-    }
+public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator {
 
-    public double minus(double a, double b) {
-        return a - b;
-    }
-
-    public double divide(double a, double b) {
-        return a / b;
-    }
-
-    public double multipy(double a, double b) {
-        return a * b;
-    }
-
+    @Override
     public double degree(double base, int exponent) {
-        if (base > 0 && exponent >= 0) {
-            double result = 1;
-            for (int i = 0; i < exponent; i++) {
-                result = result * base;
-            }
-            return result;
-        } else {
-            System.out.println("Ошибка: основание должно быть положительным, степень - неотрицательной");
-            return 0;
-        }
+        return Math.pow(base, exponent);
     }
 
+    @Override
     public double module(double a) {
-        double result;
-        if (a < 0) {
-            result = a * -1;
-        } else {
-            result = a;
-        }
-        return a;
+        return Math.abs(a);
     }
 
+    @Override
     public double radix(double a) {
         return Math.sqrt(a);
     }
